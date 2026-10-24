@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Rajdhani:wght@400;600&display=swap" rel="stylesheet">
+    <title> Seatwork 1 | Q2 </title>
+    <style> 
+body {
+    font-family: Georgia, serif;
+    background-color: #9e7b98;
+    color: #F5EBDD;
+    text-align: center;
+    margin: 0;
+}
+header {
+    background-color: #785891;
+    color: #F5EBDD;
+    padding: 25px;
+    border-bottom: 2px solid #785891;
+}
+header h1 {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    letter-spacing: 2px;
+}
+header {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #f9f9f8;
+}
+main {
+    background-color: #f9f9f8;
+    color: #785891;
+    width: 300px;
+    margin: 40px auto;
+    padding: 25px;
+    border-radius: 3px;
+    border-top: 5px solid #785891;
+}
+
+
+input[type="text"] {
+    width: 90%;
+    padding: 12px;
+    margin: 8px 0;
+    background-color: #FFFDF7;
+    color: #785891;
+    font-family: Georgia, serif;
+    font-size: 14px;
+    border: 1px solid #785891;
+    border-radius: 3px;
+    outline: none;
+}
+input[type="text"]:focus {
+    border: 2px solid #785891;
+}
+input[type="text"]::placeholder {
+    color: #888273;
+    font-style: italic;
+}
+input[type="button"] {
+    background-color: #785891;
+    color: #FFFDF7;
+    padding: 12px 30px;
+    margin-top: 12px;
+    font-family: Georgia, serif;
+    font-size: 13px;
+    letter-spacing: 2px;
+    border: 1px solid #785891;
+    border-radius: 3px;
+    cursor: pointer;
+}
+input[type="button"]:hover {
+    background-color: #FFFDF7;
+    color: #785891;
+}
+
+
+#result {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #785891;
+    color: #785891;
+    font-family: Georgia, serif;
+    font-size: 16px;
+    line-height: 1.5;
+    border-left: 3px solid #FFFDF7;
+    overflow-wrap: anywhere; 
+}
+
+
+footer {
+    background-color: #785891;
+    color: #FFFDF7;
+    padding: 18px;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+footer span {
+    color: #FFFDF7;
+    font-weight: bold;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="reactor"></div>
+        <h1> RAINBOW CATERING CLUB </h1>
+        <p> Candidate Verficiation System </p>
+    </header>
+    <main>
+        <form>
+            <input type="text" id="first_name" placeholder="Enter your First Name"> 
+            <br>
+            <input type="text" id="last_name" placeholder="Enter your Last Name"> 
+            <br>
+            <input type="button" py-click="candidate_checker" value="Enter"> 
+            <br>
+        </form>
+        <div id="result"></div>
+    </main>
+    <footer>
+       <span> Rainbow Catering Club </span>  &bull; Seatwork 1
+    <py-script src="main.py"></py-script>
+</body>
+</html>
