@@ -13,7 +13,7 @@
 body {
     font-family: Georgia, serif;
     background-color: #9e7b98;
-    color: #F5EBDD;
+    color: #FFFDF7;
     text-align: center;
     margin: 0;
 }
@@ -86,7 +86,7 @@ input[type="button"]:hover {
 #result {
     margin-top: 20px;
     padding: 15px;
-    background-color: #785891;
+    background-color: #FFFDF7;
     color: #785891;
     font-family: Georgia, serif;
     font-size: 16px;
@@ -109,6 +109,7 @@ footer span {
     font-weight: bold;
 }
     </style>
+
 </head>
 <body>
     <header>
@@ -118,17 +119,16 @@ footer span {
     </header>
     <main>
         <form>
-            <input type="text" id="first_name" placeholder="Enter your First Name"> 
-            <br>
-            <input type="text" id="last_name" placeholder="Enter your Last Name"> 
-            <br>
-            <input type="button" py-click="candidate_checker" value="Enter"> 
-            <br>
-        </form>
-        <div id="result"></div>
+            <input type="text" id="first_name" placeholder="Enter your First Name"><br>
+            <input type="text" id="last_name" placeholder="Enter your Last Name"><br>
+            <input type="button" py-click="candidate_checker" value="Enter"><br>
+            </form>
+            <div id="result"> </div>
     </main>
+
+     <script type="py" src="./main.py"></script>
+
     <footer>
        <span> Rainbow Catering Club </span>  &bull; Seatwork 1
-    <py-script src="main.py"></py-script>
 </body>
 </html>
